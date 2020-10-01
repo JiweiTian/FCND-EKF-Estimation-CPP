@@ -1,3 +1,51 @@
+# Quadrotor EKF Estimation
+
+This is the fourth project of Udacity FCND Nanodegree. In this project, I've implemented the EKF to estimate state with GPS, IMU and Magnetometer.
+
+The simulator includes several pre-defined scenarios, which use to test if the EKF works properly and the parameters are reasonable for the estimation task.
+
+![](images/page.gif)
+
+*Monte Carlo Test*
+
+
+PID parameters locates in the file [config/QuadEstimatorEKF.txt](config/QuadControlParams.txt). The controller code is in the [src/QuadContrl.cpp](src/QuadEstimatorEKF.cpp`).
+
+## Test Senarios
+
+- Scenario 6 - Sensor Noise - Passed
+
+![](images/SensorNoise.gif)
+
+- Scenario 7 - Attitude Estimation - Passed
+
+![](images/AttitudeEstimation.gif) 
+
+- Scenario 8 - Predict State - No Criteria
+
+![](images/PredictState.gif)
+
+- Scenario 9 - Predict Covariance - No Criteria
+
+![](images/PredictCovariance.gif)
+
+- Scenario 10 - Magnetometer Update - Passed
+
+![](images/MagUpdate.gif)
+
+- Scenario 11 - GPS Update - Passed
+
+![](images/GPSUpdate.gif)
+
+## To-Dos
+- [ ] Tune code and params for `Quad.UseIdealEstimator = 1`
+- [ ] Try other estimation methods
+- [ ] Add Analysis and Theories parts for
+- [ ] Complete Challenge Scenarios
+
+
+---
+
 # Estimation Project #
 
 Welcome to the estimation project.  In this project, you will be developing the estimation portion of the controller used in the CPP simulator.  By the end of the project, your simulated quad will be flying with your estimator and your custom controller (from the previous project)!
